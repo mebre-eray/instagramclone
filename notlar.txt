@@ -1,0 +1,18 @@
+
+
+
+ADIMLAR
+
+- github.com da repository oluşturuldu
+- bilgisayarımızda git yoksa git kurduk
+- github desktop uygulamasını kurduk
+- github desktop da file-clone repository seçip bilgisayarımıza indirdik.
+- main branchini publish ettik
+- main de koz yazdık push ettik
+- farklı geliştirmeler için yeni branchler oluşturduk 
+- yeni branchde kod yazıp bu kodları push ettik
+- bu branchdeki değişiklikleri main branchine göndermek için pull request açtık
+- repoda yetki verdiğimiz bir arkadaşımızı reviewer olarak atadık
+- o arkadaşımız yorum atıp eksik belirttiğinde güncelleme yaptık
+- review olarak atadığımız arkadaşımız kodu tekrardan inceleyip uygunsa merge pull - - request yaptı ve bu branch main branch'e eşleşmiş oldu. 
+- daha sonrasında oluşturduğumuz branchi sildik.
