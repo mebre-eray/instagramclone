@@ -1,0 +1,42 @@
+ul, a {
+
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    transition: .2s;
+}
+
+.navbar a:hover {
+
+    background-color: rgb(232, 130, 130);
+}
+
+@media (max-width: 1000px) {
+
+    .navbar {
+
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
