@@ -46,15 +46,50 @@ aside {
     margin: 16px 0;
 }
 
-.link {
+.asideNavbar {
     font-size: 18px;
     display: flex;
-    align-items: center;
-    padding: 11px 0;
+    flex-direction: column;
+    gap: 30px;   
 }
 
-.link i {
-    margin-right: 12px;
+.asideNavbar a {
+    transition: .2s;
+}
+
+.asideNavbar li {
+    padding: 10px;
+    position: relative;
+    transition: .5s;
+}
+
+.asideNavbar li:hover {
+    cursor: pointer;
+}
+
+
+.asideNavbar li:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: #8e8e8e;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.asideNavbar li i {
+    padding-right: 10px;
+}
+
+.asideBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
 .logo2 {
@@ -69,7 +104,11 @@ aside {
     aside {
         width: 60px;
     }
-    .asideHeader .link a {
+    .asideNavbar li {
+       padding: 0;
+
+    }
+    .asideNavbar li a {
         display: none;
     }
     .logo {
@@ -80,19 +119,10 @@ aside {
         width: 18px;
         margin: 18px 0;
     }
-    .addMore {
-        display: flex;
-        justify-content: center;
-    }
 
-    .addMore a {
-        display: none;
-    }
-
-    .asideHeader i {
+    .asideNavbar i {
         font-size: 20px;
     }
-
 }
 
 @media (max-width:800px) { 
