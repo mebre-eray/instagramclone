@@ -267,7 +267,143 @@ aside {
     cursor: pointer;
 }
 
+.rightPanel {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 300px;
+    height: 100vh;
+}
+
+.rightPanelTop {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.rightPanelTop img {
+    width: 60px;
+    height: 60px;
+}
+
+.profileTitle {
+    margin-top: 10px;
+}
+
+.rightPanelTop a {
+    margin-top: 20px;
+    color: rgb(0, 149, 246);
+    font-size: 12px;
+}
+
+.rightPanelTopText {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightPanelPeople {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.rightPanelPeopleLeft {
+    display: flex;
+    gap: 10px;
+}
+.rightPanelPeopleLeft img {
+    width: 40px;
+    height: 40px;
+}
+
+.rightPanelPeopleLeftContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightPanelFooter ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    color: rgb(168, 168, 168);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.rightPanelTop .profileTitle .profileTitleOne {
+
+    font-weight: 600;
+
+}
+
+.rightPanelTop .profileTitle .profileTitleTwo {
+
+    color: rgb(168, 168, 168);
+
+}
+
+.rightPanelTopTextOne {
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+}
+
+.rightPanelTopTextTwo {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.rightPanelTopTextTwo:hover {
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+.rightPanelPeopleLeft img {
+    border-radius: 20px;
+}
+
+.rightPanelPeopleLeftContent h5 {
+    font-size: 14px;
+}
+
+.rightPanelPeopleLeftContent p {
+    color: rgb(168, 168, 168);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.rightPanelPeopleRight p {
+
+    color: rgb(0, 149, 246);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rightPanelPeopleRight p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.footerDesc {
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
+
 @media (max-width:1270px) {
+    .rightPanel {
+        display: none;
+    }
     aside {
         width: 60px;
     }
@@ -293,6 +429,10 @@ aside {
 }
 
 @media (max-width:800px) { 
+    .rightPanel {
+        display: none;
+    }
+    
     aside {
         display: none;
     }
