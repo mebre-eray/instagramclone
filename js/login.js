@@ -1,12 +1,17 @@
 
 
 let loginBtn = document.getElementById("loginBtn")
-let email = document.getElementById("email").value
-let password = document.getElementById("password").value
+
+
 
 loginBtn.addEventListener("click", function() {
-    if(password.length<6) {
-        alert("parola 6 karakterden küçük olamaz")
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let email = document.getElementById("email").value
+    let password = document.getElementById("password").value
+    const mailControl = mailformat.test(email)
+    
+    if(!mailControl) {
+        alert("mail formatında değil")
     }
 
 })
