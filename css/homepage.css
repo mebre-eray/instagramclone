@@ -20,14 +20,25 @@ ul {
     list-style: none;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
 aside {
     width: 300px;
     height: 100vh;
-    position: fixed;
     border-right: 1px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.mainContent {
+    flex-grow: 1;
+    margin: 0 20px;
 }
 
 .asideHeader {
@@ -109,7 +120,7 @@ aside {
     width: 400px;
     height: 400px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -226,6 +237,7 @@ aside {
     height: 1px;
     background-color: rgb(38, 38, 38);
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .allSeen {
@@ -268,14 +280,12 @@ aside {
 }
 
 .rightPanel {
-    position: absolute;
-    top: 50px;
-    right: 150px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 300px;
-    height: 100vh;
+    margin-top: 10px;
+    margin-right: 50px;
 }
 
 .rightPanelTop {
@@ -429,27 +439,35 @@ aside {
 }
 
 @media (max-width:800px) { 
-    .rightPanel {
+ .container {
+        flex-direction: column;
+        align-items: center;
+    }
+   aside {
         display: none;
     }
-    
-    aside {
+
+    .mainContent {
+        margin: 0;
+    }
+
+    .rightPanel {
         display: none;
     }
 
     .bottomNav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        border-top: 1px solid gray;
-        margin: auto;
-        padding: 16px;
-        font-size: 18px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid gray;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
 
 }
 
