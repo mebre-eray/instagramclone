@@ -37,6 +37,10 @@ aside {
     padding: 20px;
 }
 
+.asideBottom .asideNavbar{
+    margin-top: -100px;
+}
+
 .addMore {
     padding: 20px;
 }
@@ -98,6 +102,169 @@ aside {
 
 .bottomNav {
     display: none;
+}
+
+.postContainer {
+
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.postHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.postHeaderLeft {
+    display: flex;
+    gap: 20px;
+}
+
+.postHeaderLeft img {
+    width: 30px;
+    height: 30px;
+}
+
+.postHeaderLeft p {
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.postHeaderRight {
+    margin-top: 7px;
+}
+
+.postBody {
+    margin-top: 20px;
+}
+
+.postBody img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(38, 38, 38);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.iconLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.likeCount {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.postDesc {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.postDesc h4 {
+    font-size: 14px;
+}
+
+.more {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+}
+
+.postFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.postFooter .postInput {
+    all: unset;
+}
+
+.postFooter .fa-face-smile {
+    color: rgb(168, 168, 168);
+    font-size: 13px;
+    transition: .2s;
+}
+
+.postFooter .fa-face-smile:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.icons i {
+    transition: .2s;
+    font-size: 22px;
+}
+.icons i:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.likeCount, .postDesc h4, .more:hover {
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(38, 38, 38);
+    margin-top: 20px;
+}
+
+.allSeen {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.allSeen img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.allSeen h4 {
+    margin-top: -80px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.allSeenDesc {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+}
+
+.allSeenFooter {
+    color: rgb(0, 149, 246);
+    margin-top: 10px;
+}
+
+.allSeenFooter:hover{
+    cursor: pointer;
 }
 
 @media (max-width:1270px) {
