@@ -61,8 +61,4 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // light & dark mode
 
-    const colorMode = document.querySelector(".colorMode");
-
-    colorMode.addEventListener('click', function () {
-        document.body.classList.toggle('light')
-    })
+   
