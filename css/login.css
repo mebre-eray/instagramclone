@@ -1,0 +1,181 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+
+body {
+
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.left {
+    position: relative;
+    margin-top: 20px;
+}
+
+.left img {
+    width: 400px;
+    height: 600px;
+}
+
+.left .screen {
+    position: absolute;
+    top: 25px;
+    left: 135px;
+    width: 215px;
+    height: 510px;
+}
+
+.panel {
+    border: 1px solid #dedede;
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px 40px;
+    width: 350px;
+    display: flex;
+}
+
+.login {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+form {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    background-color: #fafafa;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.input-box::placeholder {
+    color: #8a8a8a;
+}
+
+.input-box:focus {
+    outline: none;
+    border: 1px solid #8a8a8a;
+}
+
+.button{
+
+    background-color: #73bef0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 0;
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    color: #8a8a8a;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.line {
+    flex-grow: 1;
+    background-color: #bfbfbf;
+    height: 1px;
+}
+
+.fb {
+    margin: 20px 0;
+    color: #3b5998;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size: 13px;
+}
+
+.signup {
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #3bb1ff;
+    font-weight: 600;
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.app-stores {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+footer > ul {
+
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px 0 ;
+    font-size: 12px;
+}
+
+footer li, a {
+
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+.fa-square-facebook {
+
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+
+    .left {
+
+        display: none;
+    }
+}
