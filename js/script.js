@@ -68,19 +68,41 @@ window.addEventListener('DOMContentLoaded', function() {
 
    colorMode.addEventListener('click', function () {
     document.body.classList.toggle('light')
-
-    if(document.body.classList.contains('light')) {
-        darklogo.style.display = 'block';
-        logo.style.display = 'none';
-        for(i = 0; i < links.length; i++) {
+    colorMode.innerHTML = document.body.classList.contains('light') ? '<i class="fa-regular fa-moon"></i> Açık mod' : '<i class="fa-regular fa-moon"></i> Karanlık mod'
+    for(i = 0; i < links.length; i++) {
+        if(document.body.classList.contains('light')) { 
+            darklogo.style.display = 'block';
+            logo.style.display = 'none';
             links[i].style.color = 'black'
-        }
-    } else {
-        for(i = 0; i < links.length; i++) {
+        } else {
             darklogo.style.display = 'none'
             logo.style.display = 'block'
             links[i].style.color = 'white'
-        }
+        }  
     }
 
+   })
+
+   // yetki kontrol
+
+   const authenticated = localStorage.getItem('authenticated')
+   const userData = JSON.parse(localStorage.getItem('userData'))
+   const profileTitleOne = document.querySelector('.profileTitleOne')
+   const profileTitleTwo = document.querySelector('.profileTitleTwo')
+
+   if(!authenticated) {
+        window.location.href = "login.html"
+   }
+
+   if(authenticated) {
+        profileTitleOne.textContent = userData.username
+        profileTitleTwo.textContent = userData.title
+   }
+
+   const logout = document.querySelector('.logout')
+
+   logout.addEventListener('click', function() {
+        localStorage.removeItem('authenticated')
+        localStorage.removeItem('userData')
+        window.location.href = 'login.html'
    })
