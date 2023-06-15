@@ -61,4 +61,26 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // light & dark mode
 
-   
+   const colorMode = document.querySelector('.colorMode');
+   const links = document.getElementsByTagName('a')
+   const logo = document.querySelector('.logo');
+   const darklogo = document.querySelector('.darklogo');
+
+   colorMode.addEventListener('click', function () {
+    document.body.classList.toggle('light')
+
+    if(document.body.classList.contains('light')) {
+        darklogo.style.display = 'block';
+        logo.style.display = 'none';
+        for(i = 0; i < links.length; i++) {
+            links[i].style.color = 'black'
+        }
+    } else {
+        for(i = 0; i < links.length; i++) {
+            darklogo.style.display = 'none'
+            logo.style.display = 'block'
+            links[i].style.color = 'white'
+        }
+    }
+
+   })

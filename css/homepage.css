@@ -11,13 +11,19 @@ body {
     color: white;
 }
 
-.light {
-    background-color: white;
-    color: black !important;
-}
-
 .liked {
     color: red;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.darklogo {
+    display: none;
+    width: 100px;
+    margin: 16px 0;
 }
 
 .show {
